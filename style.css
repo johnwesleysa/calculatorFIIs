@@ -92,6 +92,10 @@ input[type=number]::-webkit-inner-spin-button{
     margin-left: 20px;
 }
 
+.resultTotal {
+    padding-bottom: 1%;
+}
+
 @media (max-width: 1300px){
     .container {
         box-shadow: none;
