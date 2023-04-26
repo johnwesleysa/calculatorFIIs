@@ -14,7 +14,7 @@ function enviar () {
     //Calculos 
     var divisaoCota1 = parseInt(totalDivid2 / parseFloat(valor1))
     console.log(divisaoCota1)
-    var divisaoCota2 = parseFloat(totalDivid2 / parseFloat(valor2))
+    var divisaoCota2 = parseInt(totalDivid2 / parseFloat(valor2))
     console.log(divisaoCota2)
     var rendimentoCota1 = parseFloat(parseFloat(valor1) * divisaoCota1 * (parseFloat(dy1/100)))
     console.log(rendimentoCota1)
