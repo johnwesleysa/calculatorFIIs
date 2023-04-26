@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <title>Funds Simple</title>
+<body>
+        <div class="container">
+
+            <div class="header">
+                <h1>Calculador de FIIs</h1>
+                <p><Strong>Como usar: </Strong>Insira nos campos abaixo os nomes e os valores das duas cotas que deseja investir e faremos o cálculo para você.</p>
+            </div>
+
+            <div class="main">
+                <label>Valor a ser investido:</label> <br>
+                <input type="number" id="total">
+                <br><br>
+
+                <div class="input-values">
+                    <div class="value1">
+                            <label>Nome da 1° Cota:</label> <br>
+                            <input type="text" id="fii1">
+                            <br><br>
+                            <label>Valor da 1° Cota:</label> <br>
+                            <input type="number" id="valor1">
+                            <br><br>
+                            <label>% do DY da 1° Cota:</label> <br>
+                            <input type="number" id="dy1">
+                            <br> <br>
+                    </div>
+
+                    <div class="value2">
+                            <label>Nome da 2° Cota:</label> <br>
+                            <input type="text" id="fii2">
+                            <br><br>
+                            <label>Valor da 2° Cota:</label> <br>
+                            <input type="number" id="valor2">
+                            <br><br>
+                            <label>% do DY da 2° Cota:</label> <br>
+                            <input type="number" id="dy2">
+                            <br><br>
+                    </div>
+                </div>
+                    <button class="enviar" onclick="enviar()">Enviar</button>
+                    <p id="p"></p>
+                
+        
+                <script src="script.js"></script>
+                <br>
+                <h1>Resultado</h1>
+                <br>
+                <div class="result">
+                    
+                    <div class="result1">
+                        <label id="resultado1"></label><br>
+                        <label id="rend1"></label><br>
+                        <br> <br>
+                    </div>
+                    <div class="result2">
+                        <label id="resultado2"></label><br>
+                        <label id="rend2"></label><br>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="resultTotal">
+                    <label id="soma_rend_mes"></label><br>
+                    <label id="total_cotas"></label><br>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
+
+
